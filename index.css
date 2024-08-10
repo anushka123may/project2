@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Add background image for the entire page */
+body {
+    background: url('https://img.freepik.com/free-vector/gradient-blue-colorful-background-modern-abstract_343694-2276.jpg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Navbar styling */
+.nav {
+    min-height: 10vh;
+    width: 100%;
+    background: url('https://e0.pxfuel.com/wallpapers/720/487/desktop-wallpaper-res-linear-gradient-green-blue-spring-green-dark-blue-ff7f-b-195a%C2%B0-green-background-green-simple-background-thumbnail.jpg') no-repeat center center/cover;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Control the dimensions of the logo image */
+.logo img {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.links {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.nav .links a:hover {
+    color: black;
+    background-color: yellow;
+    scale: 1.5;
+    border-radius: 5cm;
+    transition: 2s;
+}
+
+@media screen and (max-width: 470px) {
+    .nav {
+        flex-direction: column;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 470px) and (max-width: 924px) {
+    .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
